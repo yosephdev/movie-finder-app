@@ -72,8 +72,8 @@ class MovieFinder extends React.Component {
     const { searchTerm, results, error } = this.state;
 
     return (
-      <div className="container">
-        <div className="row">
+      <div className="container-fluid movie-app">
+        <div className="row d-flex align-items-center mt-4 mb-4">
           <div className="col-12">
             <form onSubmit={this.handleSubmit} className="form-inline my-4">
               <input
