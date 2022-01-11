@@ -1,6 +1,7 @@
 # General info
 A movie search app built using Create React App 
-This project is part of my Altcademy ReactJS Development course
+
+#This project is part of my Altcademy ReactJS Development course
 
 # Technologies
 App is created with [Create React App](https://github.com/facebook/create-react-app).
