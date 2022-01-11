@@ -1,0 +1,11 @@
+Must fix
+On mobile once you open a movie its zoomed in.
+Get rid of all the comments in the code and all the warnings
+
+Optional:
+Recommended movies
+Make actor images clickable - Redirect to their IMDB page
+ux search as they type 
+
+Potential bug with search
+
