@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import Movie from "./Movie";
 
@@ -12,7 +13,7 @@ const NotFound = () => {
 const App = () => {
   return (
     <Router>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">
           Movie Finder 2
         </Link>
