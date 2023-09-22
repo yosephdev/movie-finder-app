@@ -1,5 +1,6 @@
 import React from "react";
 import { json, checkStatus } from "./utils";
+import { API_KEY } from "./config";
 
 class Movie extends React.Component {
   constructor(props) {
@@ -10,9 +11,7 @@ class Movie extends React.Component {
   }
 
   componentDidMount() {
-    fetch(
-      `https://www.omdbapi.com/?i=${this.props.match.params.id}&apikey=e667e497`
-    )
+    fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY}`)
       .then(checkStatus)
       .then(json)
       .then(data => {
