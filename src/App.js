@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import Movie from "./Movie";
@@ -18,11 +18,9 @@ const App = () => {
           Movie Finder 2
         </Link>
       </nav>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/movie/:id" component={Movie} />
-        <Route component={NotFound} />
-      </Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/movie/:id" component={Movie} />
+      <Route component={NotFound} />
     </Router>
   );
 };
