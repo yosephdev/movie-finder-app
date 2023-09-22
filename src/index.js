@@ -1,13 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import "bootstrap/dist/css/bootstrap.css";
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import AppRoutes from "./AppRoutes"; // Import your main component with the routes
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById("root");
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const renderApp = () => {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <AppRoutes /> {/* Render your main component with routes */}
+    </React.StrictMode>
+  );
+};
+
+if (rootElement.hasChildNodes()) {
+  // Hydrate if server-rendered content exists
+  ReactDOM.hydrate(
+    <React.StrictMode>
+      <AppRoutes />
+    </React.StrictMode>,
+    rootElement
+  );
+} else {
+  renderApp();
+}
+
+// Optional: Handle hot module replacement (HMR) if needed
+if (module.hot) {
+  module.hot.accept("./AppRoutes", () => {
+    // Re-render the app when the code changes
+    renderApp();
+  });
+}
