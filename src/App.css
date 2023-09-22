@@ -1,27 +1,78 @@
-html, body, #root {
+/* Reset default margin and set a minimum height for the entire page */
+html,
+body,
+#root {
   margin: 0;
   height: 100vh;
-} 
+}
 
+/* Apply box-sizing to all elements */
 * {
   box-sizing: border-box;
 }
 
+/* Remove webkit scrollbar and make it transparent */
 ::-webkit-scrollbar {
-  width: 0px; 
-  background: transparent;  
+  width: 0px;
+  background: transparent;
 }
 
+/* General styles for the body */
 body {
-	background: #242526;
-	color: #ffffff;
-  background-image: url(http://www.w3.org/2000/svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 200px; 
+  margin: 0;
+  font-family: sans-serif;
+  /* Consider specifying a default font-family for text content */
 }
 
-.movie-app > .row {
-	overflow-x: auto;
-	flex-wrap: nowrap;
+/* Styles for the main app container */
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Styles for the footer */
+footer {
+  background: rgb(3, 37, 65);
+  color: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles for the text inside the footer */
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Styles for the footer logo */
+footer img {
+  width: 150px;
+  margin: 0 10px;
+  border-radius: 0;
+  /* You can specify border-radius if needed */
+}
+
+/* Styles for footer links */
+footer a {
+  color: rgba(1, 180, 228, 1);
+  font-family: Times, "Times New Roman", serif;
+  text-decoration: none;
+  /* Remove underlines from links */
+}
+
+/* Additional styling for the second link */
+footer a:nth-child(2) {
+  margin: 7px;
+}
+
+/* Hover effect for the second link */
+footer a:nth-child(2):hover {
+  color: #fff;
 }
