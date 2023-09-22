@@ -18,7 +18,7 @@ const Navbar = ({ fetchData, POPULAR_API, BASE_URL, API_KEY }) => {
         <div className="navbar-section">
           <li>
             <h1 className="navbar-title" onClick={reload}>
-              Movie Finder App
+              Movie Finder 
             </h1>
           </li>
           <li onClick={() => handleCategoryClick(POPULAR_API)}>
