@@ -5,10 +5,10 @@ import "./App.css";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const API_KEY = process.env.API_KEY;
+  const REACT_APP_API_KEY = process.env.API_KEY;
  
   const BASE_URL = "https://api.themoviedb.org/3/";
-  const POPULAR_API = `${BASE_URL}movie/popular?api_key=${API_KEY}`;
+  const POPULAR_API = `${BASE_URL}movie/popular?api_key=${REACT_APP_API_KEY}`;
   const IMG_API = "https://image.tmdb.org/t/p/w500";
 
 
@@ -33,7 +33,7 @@ const App = () => {
         fetchData={fetchData}
         POPULAR_API={POPULAR_API}
         BASE_URL={BASE_URL}
-        API_KEY={API_KEY}
+        API_KEY={REACT_APP_API_KEY}
       />
       <Movies movies={movies} IMG_API={IMG_API} />
       <footer className="app-footer">
@@ -46,11 +46,7 @@ const App = () => {
             />
           </a>{" "}
           | &copy; {new Date().getFullYear()} by{" "}
-          <a
-            href="https://yoseph.dev"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href="https://yoseph.dev" rel="noreferrer" target="_blank">
             Yoseph Berhane
           </a>
         </p>

@@ -8,10 +8,10 @@ const MovieDetail = () => {
 
   const [movieDetail, setMovieDetail] = useState({});
 
-  const API_KEY = process.env.API_KEY;
+  const REACT_APP_API_KEY = process.env.API_KEY;
   
   const BASE_URL = "https://api.themoviedb.org/3/";
-  const DETAILS_API = `${BASE_URL}movie/:id?api_key=${API_KEY}&append_to_response=videos`;
+  const DETAILS_API = `${BASE_URL}movie/:id?api_key=${REACT_APP_API_KEY}&append_to_response=videos`;
   const IMG_API = "https://image.tmdb.org/t/p/w500";
 
   const fetchMovieDetailData = async () => {
