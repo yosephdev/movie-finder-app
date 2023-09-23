@@ -5,10 +5,13 @@ import "./App.css";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const API_KEY = "1f63e2c618fb652a0cfd55d115a7ad02";
+  const API_KEY = process.env.API_KEY;
+ 
   const BASE_URL = "https://api.themoviedb.org/3/";
   const POPULAR_API = `${BASE_URL}movie/popular?api_key=${API_KEY}`;
   const IMG_API = "https://image.tmdb.org/t/p/w500";
+
+
 
   const fetchData = async (api) => {
     try {
