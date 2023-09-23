@@ -17,8 +17,7 @@ A simple web application for searching and viewing movie details using the TMDb 
 - [Install project dependencies](#install-project-dependencies)
 - [Create a .env file with your TMDb API key](#create-a-env-file-with-your-tmdb-api-key)
 - [Start the development server](#start-the-development-server)
-- [After running the above commands,](#after-running-the-above-commands)
-- [You can search for movies, view their details, and even watch trailers if available.](#you-can-search-for-movies-view-their-details-and-even-watch-trailers-if-available)
+- [After running the above commands, open your web browser and visit http://localhost:3000 to access the Movie Finder App.](#after-running-the-above-commands-open-your-web-browser-and-visit-httplocalhost3000-to-access-the-movie-finder-app)
 
 ## Features
 
@@ -52,7 +51,5 @@ echo "REACT_APP_API_KEY=your-tmdb-api-key" > .env
 # Start the development server
 npm start
 
-# After running the above commands, 
-open your web browser and visit http://localhost:3000 to access the Movie Finder App.
-
-# You can search for movies, view their details, and even watch trailers if available.
+# After running the above commands, open your web browser and visit http://localhost:3000 to access the Movie Finder App.
+You can search for movies, view their details, and even watch trailers if available.
