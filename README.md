@@ -34,25 +34,19 @@ Before you begin, ensure you have met the following requirements:
 
 - Node.js and npm installed on your machine.
 
-### Installation
+### Clone the repository 
+git clone https://github.com/yosephdev/movie-finder-app.git
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/movie-finder-app.git
-
-# Navigate to the project directory
+### Navigate to the project directory
 cd movie-finder-app
 
-# Install project dependencies
+### Install project dependencies
 npm install
 
-# Create a .env file with your TMDb API key
-echo "REACT_APP_API_KEY=your-tmdb-api-key" > .env
+### Create a .env file with your TMDb API key (replace your-tmdb-api-key with your actual TMDb API key)
+echo -n "REACT_APP_API_KEY=your-tmdb-api-key" > .env
 
-# Start the development server
+### Start the development server
 npm start
 
-# After running the above commands, open your web browser and 
-visit http://localhost:3000 to access the Movie Finder App.
-
-# You can search for movies, view their details, and even watch trailers if available.
+### After running the above commands, open your web browser and visit http://localhost:3000 to access the Movie Finder App.
